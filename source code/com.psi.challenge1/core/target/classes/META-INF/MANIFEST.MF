@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1559102941339
+Build-Jdk: 1.8.0_161
+Built-By: prashant_ijantkar
+Bundle-Description: Core bundle for challenge1
+Bundle-ManifestVersion: 2
+Bundle-Name: challenge1 - Core
+Bundle-SymbolicName: com.psi.challenge1.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.psi.core.models;version="1.0.0";uses:="javax.annotat
+ ion,javax.inject,org.apache.sling.api,org.apache.sling.models.annotatio
+ ns",com.psi.core;version="1.0",com.psi.core.servlets;version="1.0.0";us
+ es:="javax.servlet,org.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.inject;version="0.0.0",com.day.cq.wcm.api;version=
+ "[1.21,2)",javax.annotation,javax.servlet;version="[3.1,4)",org.apache.
+ sling.api;version="[2.3,3)",org.apache.sling.api.resource;version="[2.1
+ 0,3)",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.sling.
+ models.annotations;version="[1.4,2)",org.apache.sling.models.annotation
+ s.injectorspecific;version="[1.1,2)",org.apache.sling.settings;version=
+ "[1.3,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="javax.servlet
+ .Servlet"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.psi.core.servlets.CurrencyProviderServle
+ t.xml
+Sling-Model-Packages: com.psi.core
+Tool: Bnd-4.1.0.201810181252

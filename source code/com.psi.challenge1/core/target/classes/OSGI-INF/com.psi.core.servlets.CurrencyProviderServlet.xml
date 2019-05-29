@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.psi.core.servlets.CurrencyProviderServlet">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/challenge1"/>
+  <property name="sling.servlet.selectors" type="String" value="currenciesdata"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="challenge1/components/structure/page"/>
+  <property name="service.description" type="String" value="Simple Demo Servlet"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="com.psi.core.servlets.CurrencyProviderServlet"/>
+</scr:component>

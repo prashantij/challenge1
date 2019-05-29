@@ -1,0 +1,84 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='challenge1.home.table'}"/>
+   
+
+<sly data-sly-use.currencyModel="${'com.psi.core.models.CurrencyTableModel'}">
+        <script>
+        	var currencyName =  '${currencyModel.currencyShortName @ context="scriptString"}';
+        </script>
+</sly>
+    
+ <script type="text/javascript">
+ 
+ 
+ $( document ).ready(function() {
+	  var data =  getData();
+	});
+function getData(){
+var jqxhr = $.ajax( "/bin/challenge1.currenciesdata.json" )
+.done(function( items) {
+	var btcArray; 
+	//if(currencyName==="BTC"){
+		console.log("Data:" + items);
+		$('#currencytable tr').not(':first').not(':last').remove();
+		var html = '';
+		for(var i = 0; i < items.length; i++) {
+			if(items[i].currency === currencyName)
+		    {
+				for(var j = 0; j < items[i].quotes.length; j++){
+		            html += '<tr><td>' + items[i].quotes[j].time + 
+		                    '</td><td>' + items[i].quotes[j].price + '</td></tr>';
+				}
+				
+		    }
+
+		}
+		$('#currencytable tr').first().after(html);
+	//}
+	console.log( "success" );
+})
+.fail(function() {
+	console.log( "error" );
+})
+.always(function() {
+console.log( "complete" );
+});
+
+}
+
+
+
+
+  </script>
+  
+ <div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4 col-md-6 col-lg-4" >
+    	<!-- <img class="logo" src="/content/dam/challenge1/assets/bitcoin-logo.png" alt="Bitcoin" > -->
+    	<div class="text-block" >
+	      <h5  class="gtext" >${currencyModel.currencyShortName}</h5>
+	      <p>Day trend for the ${currencyModel.title} </p>
+	    </div>
+	</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-md-6 col-lg-4" >
+  <table id = "currencytable" class="table">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+	</div>
+  </div>
+ 
+<!-- Footer -->
+ <div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+ 

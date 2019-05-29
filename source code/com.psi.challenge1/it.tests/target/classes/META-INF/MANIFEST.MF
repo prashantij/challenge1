@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1559102594780
+Build-Jdk: 1.8.0_161
+Built-By: prashant_ijantkar
+Bundle-Description: Bundles for Integration Tests for challenge1
+Bundle-ManifestVersion: 2
+Bundle-Name: challenge1 - Integration Tests Bundles
+Bundle-SymbolicName: com.psi.challenge1.it.tests
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Sling-Test-Regexp: .*Test
+Tool: Bnd-4.1.0.201810181252

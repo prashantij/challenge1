@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>challenge1 - UI apps</comment>
+<entry key="createdBy">prashant_ijantkar</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">com.psi.challenge1.ui.apps</entry>
+<entry key="created">2019-05-29T09:39:04.890+0530</entry>
+<entry key="groupId">com.psi</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="packageType">mixed</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.psi</entry>
+<entry key="description">UI apps package for challenge1</entry>
+<entry key="artifactId">com.psi.challenge1.ui.apps</entry>
+</properties>

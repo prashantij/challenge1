@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+        <items jcr:primaryType="nt:unstructured">
+            <column1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Currency- 1"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <shortCurrenncy
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Currency Type(Short txt)"
+                        name="./shortcurrenncy1"/>
+                    <fullCurrency
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Full Currency Name"
+                        name="./fullCurrency1"/>
+                    <currencyDescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Currency Description"
+                        name="./currencydescription1"/>
+                    <currencyBackgroundImg
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Currency Background Image"
+                        rootPath="/content/dam/challenge1/assets"
+                        name="./currencybackgroundimg1"/> 
+                    <blockCss
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="CSS for the block alignment"
+                        name="./blockcss1"/>        
+                </items>
+            </column1>
+            <column2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Currency- 2"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <shortCurrenncy
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Currency Type(Short txt)"
+                        name="./shortcurrenncy2"/>
+                    <fullCurrency
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Full Currency Name"
+                        name="./fullCurrency2"/>
+                    <currencyDescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Currency Description"
+                        name="./currencydescription2"/>
+                    <currencyBackgroundImg
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Currency Background Image"
+                        rootPath="/content/dam/challenge1/assets"
+                        name="./currencybackgroundimg2"/> 
+                    <blockCss
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="CSS for the block alignment"
+                        name="./blockcss2"/>        
+                </items>
+            </column2>
+            <column3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Currency- 3"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <shortCurrenncy
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Currency Type(Short txt)"
+                        name="./shortcurrenncy3"/>
+                    <fullCurrency
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Full Currency Name"
+                        name="./fullCurrency3"/>
+                    <currencyDescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Currency Description"
+                        name="./currencydescription3"/>
+                    <currencyBackgroundImg
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Currency Background Image"
+                        rootPath="/content/dam/challenge1/assets"
+                        name="./currencybackgroundimg3"/> 
+                    <blockCss
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="CSS for the block alignment"
+                        name="./blockcss3"/>        
+                </items>
+            </column3>
+
+        </items>
+    </content>
+</jcr:root>
+

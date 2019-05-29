@@ -1,0 +1,34 @@
+	.block-background{
+  border: 3px solid #fff !important;
+   /* Half height */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Center and scale the image nicely */
+  background-position: center;
+   opacity: 0.9;
+   width:350px;
+   height:400px;
+}
+ 
+.text-block {
+	margin:10px;
+  color: white;
+   opacity: 0.8;
+  background-color: black;
+  background-position: center;
+  
+}  
+
+.gtext{
+  color: #f7aa00;
+} 
+
+.block-background:hover{
+ opacity: 1;
+}
+
+.logo{
+	height:50px;
+	width:200px;
+	margin:20px;
+}
